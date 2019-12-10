@@ -11,7 +11,7 @@ Password Hashing Competition (https://password-hashing.net/).
 
 
 ### Intro 
-For my final project for CS2021, I decided to implement a basic password manager in Python using the Argon2 KDF and
+For my final project for CS2021, I decided to implement a basic password vault in Python using the Argon2 KDF and
 AES-128-GCB.
 
 
@@ -19,26 +19,24 @@ AES-128-GCB.
 NOTE: precompiled binaries are in the **dist** folder. You can run these instead of installing dependencies and 
 building from source.
 1. Make sure that Conda is installed.
-2. Create a new Conda environment from the **environment.yaml** file
-3. Build the binary by running ``
+2. Create a new Conda environment from the **environment.yaml** file by running `conda env create -f environment.yaml`
 
 
 ### Running the password manager
 
+Actually you have to implement it. Run the tests to see it work. It is in the **vault.py** file. 
 
 ### Running tests
-In the root folder (final), run the following: `python -m unittest discover -s test`.
+In the root folder (SimplePass), run the following: `python -m unittest discover -s test`.
 This will run all the unit tests in the **test** directory.
 
 
 ### Folders
-**data** - contains the password database
 
 **password_manager** - contains the source code
 
 **test** - contains test files for understanding the functionality of Argon2 and the AES module
 
-**dist** - contains precompiled binaries from 'pyinstaller'
 
 ### Improvements and considerations
 - Writing the unencrypted SQLite3 database to disk is a SERIOUS security risk, since it could be copied or stored after deleting.
