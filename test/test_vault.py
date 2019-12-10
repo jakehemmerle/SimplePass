@@ -1,5 +1,5 @@
 import unittest
-from password_manager.vault import Vault
+from vault import Vault
 
 
 service1, username1, password1 = 'Example Service', 'test_username', 'SECretPassWORDD!'

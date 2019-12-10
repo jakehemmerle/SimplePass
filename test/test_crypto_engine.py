@@ -1,6 +1,6 @@
 import unittest
-from password_manager.crypto_engine import CryptoEngine
-from password_manager.vault import Vault
+from crypto_engine import CryptoEngine
+from vault import Vault
 
 
 test_db = '../data/test_db.sqlite3.enc'

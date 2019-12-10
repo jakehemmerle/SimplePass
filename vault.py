@@ -1,5 +1,5 @@
 import sqlite3, os
-from password_manager.crypto_engine import CryptoEngine
+from crypto_engine import CryptoEngine
 
 
 class Vault:
